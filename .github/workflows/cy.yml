@@ -19,7 +19,7 @@ jobs:
         python-version: '3.8'
 
     - name: Rodar testes da calculadora
-      run: testUnitPython/calcladora_test.py
+      run: python -m unittest testeUnitário/testUnitPython/calculadora_test.py
 
     - name: Rodar teste de verificação se é par
-      run: Verificar_par_test.py
+      run: python -m unittest testeUnitário/testUnitPython/Verificar_par_test.py
