@@ -1,0 +1,25 @@
+name: Python Testes Automtizados
+
+on:
+  push:
+    branches: [main]
+  pull_request: 
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkou@v3
+    
+    - name: Intação do Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.0'
+
+    - name: Rodar testes da calculadora
+      run: testUnitPython/calcladora_test.py
+
+    - name: Rodar teste de verificação se é par
+      run: Verificar_par_test.py
