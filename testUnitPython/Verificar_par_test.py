@@ -1,5 +1,5 @@
 import unittest
-from tesetUnitPython.Verificar_par import verifica_par
+from Verificar_par import verifica_par
 
 class TesteVerificaPar(unittest.TestCase):
     def test_verifica_par(self):
