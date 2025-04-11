@@ -2,9 +2,9 @@ name: Python Testes Automtizados
 
 on:
   push:
-    branches: [main]
+    branches: [pipeline]
   pull_request: 
-    branches: [main]
+    branches: [pipeline]
 jobs:
   test:
     runs-on: ubuntu-latest
