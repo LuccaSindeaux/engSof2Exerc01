@@ -1,5 +1,5 @@
 import unittest
-from testeUnitário.src.calculadora import somar, dividir
+from calculadora import somar, dividir
 
 class TestCalculadora(unittest.TestCase):
 
